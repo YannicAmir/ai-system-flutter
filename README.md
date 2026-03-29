@@ -13,6 +13,10 @@ This repo contains three agentic systems, all with the same goal: building Flutt
 
 The goal is to build full-featured Flutter mobile apps at the speed of AI — reducing development costs while maintaining enterprise-grade quality. These agentic systems allow a team of AI engineers to collaborate on the same Flutter app(s) and ensure consistent, high-quality output.
 
+For the full tech stack and architecture checkout:
+1. [Architecture Guide](.claude/organization/technology/shared_instructions/architecture.guidance.instructions.md)
+2. [Tech Stack Guide](.claude/organization/technology/shared_instructions/tech.stack.instructions.md)
+
 ## What's Covered
 
 Specialized agents and subagents cover just about everything needed for a production-grade mobile app:
