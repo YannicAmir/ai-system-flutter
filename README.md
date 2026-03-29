@@ -37,5 +37,4 @@ Once I finish the user-facing AI features ( chat and SEC filing analyzer), I may
 - RAG and vector databases (Pinecone)
 - Agentic system observability (LangGraph, LangSmith, LangChain)
 - Agentic system evals and CI/CD (DeepEval / Confident AI)
-
-Stack: Node.js, TypeScript, and Python.
+- Stack: Node.js, TypeScript, and Python.
