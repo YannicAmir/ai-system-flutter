@@ -2,15 +2,20 @@
 
 ## Intro
 
-Hey, I'm Yannic 👋 -- I build agentic systems for products to be used in production with real users. Particulary, I build agentic systems for production & enterprise grade apps (mobile, web, backend, serverless function) and user facing features that require AI (think chat, analizing doc to provide summary to user, etc.). This repo contains 3 agentic systems all with the same goal: building Flutter mobile apps.
+Hey, I'm Yannic 👋 -- I build agentic systems for production apps shipped to real users. Specifically, I focus on two areas when building Agentic Systems:
+
+1. Production & enterprise grade apps (mobile, web, backend, and serverless functions)
+2. User-facing features that require AI (think: chat, analyzing docs to provide summaries to users, etc.)
+
+This repo contains three agentic systems, all with the same goal: building Flutter mobile apps.
 
 ## Background
 
-The goal is to build a full-featured Flutter mobile app with the speed of AI (which also means reduced dev costs), while maintaining enterprise-grade quality. The agentic systems in this repo scale across a team of AI Engineers.
+The goal is to build full-featured Flutter mobile apps at the speed of AI — reducing development costs while maintaining enterprise-grade quality. These agentic systems allow a team of AI engineers to collaborate on the same Flutter app(s) and ensure consistent, high-quality output.
 
 ## What's Covered
 
-There are specialized agents and subagents for just about everything you need for an enterprise/production-grade mobile app:
+Specialized agents and subagents cover just about everything needed for a production-grade mobile app:
 
 - Presentation (UI, Analytics, L10n, Accessibility, etc.)
 - Domain
@@ -21,10 +26,16 @@ There are specialized agents and subagents for just about everything you need fo
 
 ## Car Factory Analogy
 
-I like to look at Agentic Systems like car factories. In a car factory you put in some sort of request, materials, & plans (your inputs) and get out a car (output). In between there are humans and machines, with certain responsibilities, completing processes and subprocesses. Also, you may want to have several factories just in case one or more go down, so you can continue to produce cars. So how does this connect?
+I like to look at Agentic Systems like car factories: raw inputs (materials, plans, requests) go in, and a finished car comes out. In between, humans and machines each play specific roles, completing processes and subprocesses. You might also have multiple factories so that if one goes down, production continues.
 
-This Agentic System takes in inputs (mocks, prompts, etc) and produces code for mobile app (the output or "car"). There are many custom agents that have specific responsibilities -- for instance the UI Builder responsible for implementing the the UI from a given Figma mock (via connecting to Figma's MCP server). There are `.github`, `.agents`, and `.claude` "factories" that all build the same app, just in case you hit a session limit with Claude Code, you can switch over to Antigravity etc. etc.
+This system works the same way. Inputs (Figma mocks, prompts, etc.) go in, and Flutter code comes out. Custom agents each have defined responsibilities -- for example, the UI Builder responsible for implementing the UI from a given Figma mock (via connecting to Figma's MCP server). The `.github`, `.agents`, and `.claude` directories act as separate "factories" that all build the same app, so if you hit a session limit in one (e.g., Claude Code), you can seamlessly switch to another.
 
 ## Upcoming
 
-Once I finish building out the user-facing AI features (chat, SEC-filing analyzer), I may make the agentic system, that I use to build my serverless function app, public in a separate repo as well. They cover RAG & Vector DBs (with Pinecone), Agentic System observability (with LangGraph, LangSmith, and LangChain), and Agentic System eval & CICD (with DeepEval / Confident AI). Specifically for: Node.js, TypeScript, and Python.
+Once I finish the user-facing AI features ( chat and SEC filing analyzer), I may open-source the agentic system I use for my serverless function app in a separate repo. That system covers:
+
+- RAG and vector databases (Pinecone)
+- Agentic system observability (LangGraph, LangSmith, LangChain)
+- Agentic system evals and CI/CD (DeepEval / Confident AI)
+
+Stack: Node.js, TypeScript, and Python.
